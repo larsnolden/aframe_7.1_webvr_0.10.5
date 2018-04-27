@@ -40,9 +40,6 @@ if (utils.device.isIOSOlderThan10(window.navigator.userAgent)) {
   window.WebVRConfig.BUFFER_SCALE = 1 / window.devicePixelRatio;
 }
 
-// WebVR polyfill
-require('webvr-polyfill');
-
 require('present'); // Polyfill `performance.now()`.
 
 // CSS.
